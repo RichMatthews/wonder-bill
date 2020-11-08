@@ -1,0 +1,47 @@
+.home-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.home-container-heading {
+    background-color: #00b3f5;
+    color: #fff;
+    padding: 30px;
+    margin-top: 20px;
+    text-align: center;
+    width: 80%;
+}
+
+.payments-container {
+    border-bottom: 1px solid #ccc;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-bottom: 50px;
+    width: 500px;
+}
+
+.payments-container-row {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.payments-container-top-row {
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.payments-container-bottom-row {
+    font-size: 12px;
+    padding-bottom: 10px;
+}
+
+.add-btn {
+    background-color: #00cd50;
+    border-radius: 20px;
+    cursor: pointer;
+    padding: 10px;
+}
