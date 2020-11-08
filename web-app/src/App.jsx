@@ -11,7 +11,7 @@ export const Router = () => (
                 <Route exact path="/">
                     <Home />
                 </Route>
-                <Route path="/add/:id">
+                <Route path="/add">
                     <Example />
                 </Route>
                 <Route path="/edit/:id">
