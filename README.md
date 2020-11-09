@@ -1,31 +1,24 @@
-# README #
+# Wonderbill
 
-At WonderBill we allow users to manually keep track of any regular payments.
-These payments could be anything, but common examples are rent and mortgage payments.
+## start instructions
 
-## Task Definition ##
+`git clone https://github.com/RichMatthews/wonder-bill`
+`cd wonder-bill/web-app`
+`yarn && yarn start`
 
-We would like you to build a React application that allows the management of regular payments.
-A basic React application has been provided that you may use as the base of your work, it is built using `Create React App` and includes `Redux Toolkit` and `React Router`.
-A simple Node API has been provided that can be used to store, modify, retrieve and delete payments.
+You will also need to start the server
 
-_Please note, the API stores objects in-memory, there is no database, therefore all objects are lost when the server is stopped!_
+`cd wonder-bill/api`
+`yarn && yarn start`
 
-## Requirements ##
+## testing
 
-- Built using React
-- State management handled by Redux
-- Payments are stored in the API
-- Appearance matches the provided design (as a rough guide)
-- Ability to add a regular payment with a name, amount, start date and frequency (weekly, monthly, annually)
-- Ability to modify a regular payment (name, amount, start date and frequency)
-- Ability to delete a regular payment
-- Web app should work on the latest version of Chrome
-- Unit test where appropriate
+`yarn test`
 
-## Submission ##
+I would normally write more tests but as this was a tech challenge I just kept it to a few to demonstrate I know how to test without going over board. I would normally write e2e tests too to cover normal user journeys
 
-Please provide a URL to a public repository containing your task submission.
-Instructions on how to run the script are useful to include.
+## other notes
 
-### Thank you for your time and effort! ###
+I have never used Redux-toolkit before so spent some time reading the docs and understanding the API. I really like it and enjoyed using it in this challenge! But apologies if the standards aren't quite up to scratch. I am more use to a traditional redux approach with higher order components using connect and so forth. However, I much prefer this way now I've spent some time using it.
+
+any questions, let me know!
