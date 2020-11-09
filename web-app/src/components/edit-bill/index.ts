@@ -1,1 +1,1 @@
-export * from './edit-bill-container'
+export * from './edit-bill-container.jsx'

@@ -15,10 +15,18 @@
 }
 
 .payments-container {
-    border-bottom: 1px solid #ccc;
+    margin-bottom: 20px;
+    min-height: 100px;
+}
+
+.payment-container {
+    border-bottom: 1px solid #8d99aa;
+    color: #445368;
     display: flex;
+    font-weight: 700;
     flex-direction: column;
     justify-content: space-between;
+    text-decoration: none;
     width: 500px;
 }
 
@@ -34,13 +42,19 @@
 }
 
 .payments-container-bottom-row {
+    color: #8d99aa;
     font-size: 12px;
+    font-weight: 400;
     padding-bottom: 10px;
 }
 
 .add-btn {
     background-color: #00cd50;
     border-radius: 20px;
+    color: #fff;
     cursor: pointer;
     padding: 10px;
+    text-align: center;
+    text-decoration: none;
+    width: 200px;
 }

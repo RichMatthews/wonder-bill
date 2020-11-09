@@ -1,13 +1,67 @@
 body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+    font-family: Hind;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.container {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.inner-container {
+    color: '##445368';
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    width: 320px;
+}
+
+.container-heading {
+    background-color: #00b3f5;
+    color: #fff;
+    padding: 30px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    text-align: center;
+    width: 80%;
+}
+
+.title {
+    color: #445368;
+    font-size: 18px;
+    margin-bottom: 5px;
+}
+
+.description {
+    color: #8d99aa;
+    font-size: 15px;
+    margin: auto;
+    width: 300px;
+}
+
+.text-input {
+    border: none;
+    border-bottom: 1px solid #ccc;
+    color: #445368;
+    font-size: 16px;
+    margin: 10px;
+    padding-top: 10px;
+    padding-bottom: 5px;
+}
+
+.btn {
+    border-radius: 50px;
+    color: #fff;
+    cursor: pointer;
+    margin: 10px;
+    padding: 10px;
+    text-align: center;
+    width: 300px;
+}
+.delete-btn {
+    background-color: #c81a0d;
+}
+.save-btn {
+    background-color: #00cd50;
 }

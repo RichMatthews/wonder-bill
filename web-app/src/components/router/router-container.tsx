@@ -7,8 +7,6 @@ import { AddBillContainer } from '../../components/add-bill'
 import { EditBillContainer } from '../../components/edit-bill'
 import { getPayments } from '../../state/payments'
 
-// import { createPayment } from './state/payments'
-
 export const App = () => {
     return (
         <Provider store={store}>
@@ -24,12 +22,6 @@ export const MainRouter = () => {
         fetch('/payments', {
             method: 'GET',
             headers: { 'Content-Type': 'application/json' },
-            // body: JSON.stringify({
-            //     name,
-            //     amount,
-            //     startDate,
-            //     frequency,
-            // }),
         })
             .then((res) => res.json())
             .then((res) => dispatch(getPayments(res)))
