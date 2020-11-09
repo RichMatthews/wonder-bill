@@ -1,7 +1,6 @@
-import React, { useEffect } from 'react'
-import { connect, useDispatch, useSelector } from 'react-redux'
+import React from 'react'
+import { useSelector } from 'react-redux'
 import { Link } from 'react-router-dom'
-import { getPayments } from '../../state/payments'
 
 import './index.css'
 
@@ -28,11 +27,9 @@ export const Home = () => {
                     )
                 })}
             </div>
-            <Link to={'/add'} className="add-btn">
+            <Link to={'/add'} className="btn add-btn">
                 Add a bill
             </Link>
         </div>
     )
 }
-
-export const HomeContainer = Home

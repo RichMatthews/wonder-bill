@@ -9,7 +9,7 @@ export const AddBill = () => {
     const [name, setName] = useState('')
     const [amount, setAmount] = useState()
     const [startDate, setStartDate] = useState('')
-    const [frequency, setFrequency] = useState('Weekly')
+    const [frequency, setFrequency] = useState('')
     const dispatch = useDispatch()
     const history = useHistory()
 
@@ -42,16 +42,26 @@ export const AddBill = () => {
             <div className="inner-container">
                 <div className="title">Enter your details</div>
                 <div className="description">Keep track of your household spending by adding your bill</div>
-                <input className="text-input" placeholder="Name" onChange={(e) => setName(e.target.value)} />
-                <input className="text-input" placeholder="Amount" onChange={(e) => setAmount(e.target.value)} />
-                <input className="text-input" placeholder="Start date" onChange={(e) => setStartDate(e.target.value)} />
+                <input
+                    className="text-input text-input-add-bill"
+                    placeholder="Name"
+                    onChange={(e) => setName(e.target.value)}
+                />
+                <input
+                    className="text-input text-input-add-bill"
+                    placeholder="Amount"
+                    onChange={(e) => setAmount(e.target.value)}
+                />
+                <input
+                    className="text-input text-input-add-bill"
+                    placeholder="Start date"
+                    onChange={(e) => setStartDate(e.target.value)}
+                />
                 <Select frequency={frequency} setFrequency={setFrequency} />
             </div>
-            <div className="add-btn" onClick={submitNewBill}>
+            <div className="btn add-btn" onClick={submitNewBill}>
                 Add new payment
             </div>
         </div>
     )
 }
-
-export const AddBillContainer = AddBill

@@ -49,37 +49,40 @@ export const EditBill = ({ id }) => {
     return (
         <div className="container">
             <div className="container-heading">Edit A Bill</div>
-            <div style={{ textAlign: 'center', display: 'flex', flexDirection: 'column', width: '350px' }}>
-                <div>{name}</div>
-                <div>If you'd like to edit your bill you can change the details below</div>
+            <div className="inner-container">
+                <div className="title">{name}</div>
+                <div className="description">If you'd like to edit your bill you can change the details below</div>
+                <label className="label">Name</label>
                 <input
                     className="text-input"
                     placeholder="Name"
                     onChange={(e) => setName(e.target.value)}
                     value={name}
                 />
+                <label className="label">Amount</label>
                 <input
                     className="text-input"
                     placeholder="Amount"
                     onChange={(e) => setAmount(e.target.value)}
                     value={amount}
                 />
+                <label className="label">Start Date</label>
                 <input
                     className="text-input"
                     placeholder="Start date"
                     onChange={(e) => setStartDate(e.target.value)}
                     value={startDate}
                 />
+                <label className="label">Frequency</label>
                 <Select frequency={frequency} setFrequency={setFrequency} />
-            </div>
-            <div className="btn save-btn" onClick={editBill}>
-                Save
-            </div>
-            <div className="btn delete-btn" onClick={deleteBill}>
-                Delete
+
+                <div className="btn save-btn" onClick={editBill}>
+                    Save
+                </div>
+                <div className="btn delete-btn" onClick={deleteBill}>
+                    Delete
+                </div>
             </div>
         </div>
     )
 }
-
-export const EditBillContainer = EditBill

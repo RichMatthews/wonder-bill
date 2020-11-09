@@ -14,8 +14,10 @@ export const customReactSelectStyles = {
         fontSize: 16,
         marginBottom: 20,
         marginLeft: 10,
-        paddingLeft: 0,
+        paddingLeft: 10,
         outline: 'none',
+        boxShadow: 'none',
+        width: '94%',
     }),
     placeholder: (base: any) => ({
         ...base,
@@ -44,14 +46,11 @@ const options = [
 ]
 
 export const Select = ({ frequency, setFrequency }: any) => {
-    {
-        console.log(frequency, 'freq')
-    }
     return (
         <ReactSelect
             onChange={({ value }: any) => setFrequency(value)}
             options={options}
-            placeholder="How often does this occur?"
+            placeholder="Frequency"
             styles={customReactSelectStyles}
             // @ts-ignore
             value={{ label: frequency }}

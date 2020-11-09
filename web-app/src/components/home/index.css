@@ -37,24 +37,14 @@
 }
 
 .payments-container-top-row {
+    font-size: 20px;
     margin-top: 20px;
     margin-bottom: 20px;
 }
 
 .payments-container-bottom-row {
     color: #8d99aa;
-    font-size: 12px;
+    font-size: 14px;
     font-weight: 400;
     padding-bottom: 10px;
-}
-
-.add-btn {
-    background-color: #00cd50;
-    border-radius: 20px;
-    color: #fff;
-    cursor: pointer;
-    padding: 10px;
-    text-align: center;
-    text-decoration: none;
-    width: 200px;
 }

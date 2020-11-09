@@ -1,10 +1,10 @@
 import React, { useEffect } from 'react'
-import { Provider, useDispatch, useSelector } from 'react-redux'
-import { BrowserRouter as Router, Switch, Route, Link } from 'react-router-dom'
+import { Provider, useDispatch } from 'react-redux'
+import { BrowserRouter as Router, Switch, Route } from 'react-router-dom'
 import store from '../../state/store'
-import { HomeContainer } from '../../components/home'
-import { AddBillContainer } from '../../components/add-bill'
-import { EditBillContainer } from '../../components/edit-bill'
+import { Home } from '../../components/home'
+import { AddBill } from '../../components/add-bill'
+import { EditBill } from '../../components/edit-bill'
 import { getPayments } from '../../state/payments'
 
 export const App = () => {
@@ -32,12 +32,12 @@ export const MainRouter = () => {
         <Router>
             <Switch>
                 <Route exact path="/">
-                    <HomeContainer />
+                    <Home />
                 </Route>
                 <Route path="/add">
-                    <AddBillContainer />
+                    <AddBill />
                 </Route>
-                <Route path="/edit/:id" render={(props) => <EditBillContainer id={props.match.params.id} />} />
+                <Route path="/edit/:id" render={(props) => <EditBill id={props.match.params.id} />} />
             </Switch>
         </Router>
     )
