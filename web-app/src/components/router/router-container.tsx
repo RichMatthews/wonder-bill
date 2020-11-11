@@ -19,13 +19,7 @@ export const MainRouter = () => {
     const dispatch = useDispatch()
 
     useEffect(() => {
-        fetch('/payments', {
-            method: 'GET',
-            headers: { 'Content-Type': 'application/json' },
-        })
-            .then((res) => res.json())
-            .then((res) => dispatch(getPayments(res)))
-            .catch((e) => console.log('ERROR'))
+        dispatch(getPayments())
     }, [])
 
     return (
